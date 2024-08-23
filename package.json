@@ -1,0 +1,28 @@
+{
+  "name": "qa-engineer-assignment",
+  "version": "1.0.0",
+  "description": "QA Engineer Assignment",
+  "main": "index.js",
+  "scripts": {
+    "start-server": "cd the-awesome-qa-webpage/ && python3 -m http.server 8000",
+    "lint": "eslint 'tests/**/*.ts'",
+    "test-all": "npx playwright test"
+  },
+  "keywords": [],
+  "author": "Ricardo Toledo",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.46.1",
+    "@types/node": "^22.4.0",
+    "@typescript-eslint/eslint-plugin": "^8.2.0",
+    "@typescript-eslint/parser": "^8.2.0",
+    "eslint": "^9.9.0",
+    "eslint-plugin-playwright": "^1.6.2",
+    "globals": "^15.9.0",
+    "monocart-reporter": "^2.6.5",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.2.0"
+  }
+}
