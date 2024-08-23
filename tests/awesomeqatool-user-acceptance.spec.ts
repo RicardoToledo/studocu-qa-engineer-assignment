@@ -48,14 +48,14 @@ test.describe("List and Question Counter", () => {
     test("should hide 'No questions yet :-(' message and update question counter to 1 after adding a new question", async () => {
         await questionsPage.removeQuestionsButton.click();
 
-        const questionAnswerPair: { question: string, answer: string } = dataGenerator.generateSingleQuestionAnswerPair();
+        const questionAnswerPair: QuestionAnswerPair = dataGenerator.generateSingleQuestionAnswerPair();
         await questionsPage.createQuestion(questionAnswerPair.question, questionAnswerPair.answer);
         await expect.soft(questionsPage.noQuestionsMessage).toBeHidden();
         await questionsPage.assertSidebarQuestionCounter(1);
     });
 
     test("should allow opening a question without closing others", async () => {
-        const questionAnswerPair: { question: string, answer: string } = dataGenerator.generateSingleQuestionAnswerPair();
+        const questionAnswerPair: QuestionAnswerPair = dataGenerator.generateSingleQuestionAnswerPair();
         await questionsPage.createQuestion(questionAnswerPair.question, questionAnswerPair.answer);
 
         await questionsPage.questionTexts.first().click();
