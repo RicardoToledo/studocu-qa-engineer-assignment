@@ -1,6 +1,6 @@
 import { expect, type Locator, type Page } from "@playwright/test";
 import { TOOLTIP } from "../utils/constants";
-import { QuestionAnswerPair } from "../interfaces/QuestionAnswerPair.interface";
+import { QuestionAnswerPair } from "../interfaces/question-answer-pair";
 
 export class QuestionsPage {
     readonly page: Page;

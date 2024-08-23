@@ -3,7 +3,7 @@ import QuestionsPage from "../pages/questions-page";
 import * as dataGenerator from "../utils/data-generator";
 import { DEFAULT } from "../utils/constants";
 import { trimTextArray, extractQuestions } from "../utils/utils";
-import { QuestionAnswerPair } from "../interfaces/QuestionAnswerPair.interface";
+import { QuestionAnswerPair } from "../interfaces/question-answer-pair";
 
 let questionsPage: QuestionsPage;
 

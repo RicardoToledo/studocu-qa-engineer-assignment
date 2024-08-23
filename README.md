@@ -32,6 +32,7 @@ Clone the repository and install dependencies from the root directory to set up 
 ```sh
 git clone https://github.com/RicardoToledo/studocu-qa-engineer-assignment
 npm install
+npx playwright install
 ```
 
 ## Project Structure
@@ -101,6 +102,7 @@ Example:
 ```bash
 $ npm run BROWSER=chromium test:browser
 ```
+> Note: A local web server on `http://localhost:8000` will automatically start on each test execution, even so a npm `start-server` script exists in case you want to manually explore the web page.
 
 ## Predefined npm Scripts
 | **Command** | **Description** | **Example Usage** 
