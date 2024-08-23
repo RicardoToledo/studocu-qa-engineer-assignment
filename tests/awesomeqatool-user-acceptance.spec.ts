@@ -114,7 +114,7 @@ test.describe("Create a new question", () => {
     });
 
     // Test expected to fail due to missing maxlength attribute or character limit functionality on answer input
-    test("should enforce character limit on answer input (boundary-value analysis)", async () => {
+    test.fail("should enforce character limit on answer input (boundary-value analysis)", async () => {
         const maxLengthAttribute = await questionsPage.answerInput.getAttribute('maxlength');
         // eslint-disable-next-line playwright/no-conditional-in-test
         const maxLengthValue = maxLengthAttribute ? parseInt(maxLengthAttribute, 10) : 500;

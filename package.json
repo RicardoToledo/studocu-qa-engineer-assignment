@@ -6,7 +6,16 @@
   "scripts": {
     "start-server": "cd the-awesome-qa-webpage/ && python3 -m http.server 8000",
     "lint": "eslint 'tests/**/*.ts'",
-    "test-all": "npx playwright test"
+    "test:all": "npx playwright test --headed",
+    "test:desktop": "npx playwright test --project=chromium --headed --project=firefox --headed --project=webkit --headed",
+    "test:mobile": "npx playwright test --project='Mobile Chrome' --headed --project='Mobile Safari' --headed",
+    "test:browser": "npx playwright test --project=${BROWSER} --headed",
+    "test:mobile:browser": "npx playwright test --project='Mobile ${BROWSER}' --headed",
+    "test:desktop:headless": "npx playwright test --project=chromium --project=firefox --project=webkit",
+    "test:mobile:headless": "npx playwright test --project='Mobile Chrome' --project='Mobile Safari'",
+    "test:workers": "npx playwright test --workers=${WORKERS} --headed",
+    "test:single-worker": "npx playwright test --workers=1 --headed",
+    "test:debug": "npx playwright test --debug"
   },
   "keywords": [],
   "author": "Ricardo Toledo",
