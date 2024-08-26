@@ -115,9 +115,11 @@ npm run <command>
 ```
 Example:
 ```bash
-$ npm run BROWSER=chromium test:browser
+$ BROWSER=chromium npm run test:browser
 ```
-> Note: A local web server at http://localhost:8000 will automatically start with each test execution. However, an npm start-server script is available if you wish to manually explore the web page.
+> **Notes:**
+> - Before running any npm command, make sure to pass the environment variable first as shown in the example above.
+> - Each test execution automatically starts a local web server at http://localhost:8000. However, if you prefer to manually explore the web page, you can use the npm `start-server` script.
 
 ### Predefined npm Scripts
 | **Command** | **Description** | **Example Usage** 
