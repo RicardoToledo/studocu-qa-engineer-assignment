@@ -18,6 +18,11 @@
 > 
 > For technical solution, use JS/TS and Playwright framework, given we use these internally. Take this chance to show your knowledge not only regarding coding but also regarding integrating different features to an automation project as reporting, parallel execution, retries, screenshots and logging when failing, etc.
 
+<h4 align="center">Application Under Test: The awesome Q/A tool webpage</h4>
+<p align="center">
+   <img width="750" alt="Application Under Test: The awesome Q/A tool webpage" src="https://github.com/user-attachments/assets/ad5a1123-d5cb-4d08-aa59-4d669b37c369">
+</p>
+
 ### Approach and project development
 
 The initial approach involved conducting exploratory testing to familiarize with the application, its features, and its boundaries. This allowed for a deeper understanding of the app's functionalities and potential limitations. Following this, a detailed test script was developed to guide the manual functional testing phase, ensuring that all critical aspects of the app were thoroughly evaluated. Based on the insights gained from this manual testing, a draft of test cases for automation was outlined. These test cases were then implemented and iterated using the next best testing practices:
@@ -31,7 +36,7 @@ The initial approach involved conducting exploratory testing to familiarize with
 
 ### Cross-Browser Testing
 
-Tested the application across all major desktop browsers as well as mobile browsers to ensure consistent performance, layout integrity, and functionality across different platforms and devices.
+The application is tested across all major desktop browsers as well as mobile browsers to ensure consistent performance, layout integrity, and functionality across different platforms and devices.
 
 `Desktop`: Chromium, Firefox, WebKit
 
