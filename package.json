@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start-server": "cd the-awesome-qa-webpage/ && python3 -m http.server 8000",
-    "lint": "eslint 'tests/**/*.ts'",
+    "lint": "eslint . --ext .ts,.tsx",
     "test:all": "npx playwright test --headed",
     "test:desktop": "npx playwright test --project=chromium --headed --project=firefox --headed --project=webkit --headed",
     "test:mobile": "npx playwright test --project='Mobile Chrome' --headed --project='Mobile Safari' --headed",
@@ -19,7 +19,7 @@
   },
   "keywords": [],
   "author": "Ricardo Toledo",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.9.0",
     "@faker-js/faker": "^8.4.1",
@@ -29,9 +29,7 @@
     "@typescript-eslint/parser": "^8.2.0",
     "eslint": "^9.9.0",
     "eslint-plugin-playwright": "^1.6.2",
-    "globals": "^15.9.0",
     "monocart-reporter": "^2.6.5",
-    "typescript": "^5.5.4",
-    "typescript-eslint": "^8.2.0"
+    "typescript": "^5.5.4"
   }
 }
